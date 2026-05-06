@@ -6,7 +6,7 @@ import type { ReactNode } from "react"
 import { Hstack } from "../../layouts"
 
 const inputVariants = cva(
-  "grow rounded-md transition items-center outline -outline-offset-1 bg-card text-text-primary disabled:text-text-disabled focus-within:shadow-box pr-lg",
+  "grow overflow-hidden rounded-md transition items-center outline -outline-offset-1 bg-card text-text-primary disabled:text-text-disabled focus-within:shadow-box pr-lg",
   {
     variants: {
       status: {
