@@ -6,7 +6,7 @@ import type { ReactNode } from "react"
 import { Hstack } from "../../layouts"
 
 const inputVariants = cva(
-  "grow overflow-hidden rounded-md transition items-center outline -outline-offset-1 bg-card text-text-primary disabled:text-text-disabled focus-within:shadow-box pr-lg",
+  "grow rounded-md transition items-center outline -outline-offset-1 bg-card text-text-primary disabled:text-text-disabled focus-within:shadow-box pr-lg",
   {
     variants: {
       status: {
@@ -34,7 +34,7 @@ const Input = ({
       <input
         {...rest}
         disabled={disabled}
-        className="flex-1 border-0 py-md pl-lg outline-0"
+        className="flex-1 border-0 py-md pl-lg outline-0 min-w-0"
       />
       {trailingChild}
     </Hstack>
